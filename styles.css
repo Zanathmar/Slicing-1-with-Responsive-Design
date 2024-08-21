@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #fff;
+    color: #252525;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 122px;
+    padding-bottom: 56px;
+}
+
+.text-section {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+h1 {
+    max-width: 674px;
+    font-size: 73px;
+    font-weight: 577;
+    margin-bottom: 20px;
+}
+
+.text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.text-right p {
+    font-size: 1.2em;
+    max-width: 400px;
+    margin-bottom: 0px;
+    color: #252525bc;
+    text-align: left;
+    font-weight: 400;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    display: flex;
+ padding: 16px 32px;
+ align-items: flex-start;
+ gap: 10px;
+    color: #fff;
+    background-color: #252525;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.11);
+}
+
+.image-section {
+    margin-top: 78px;
+    text-align: center;
+}
+
+.image-section img {
+    margin-top: 78px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 430px) {
+
+    
+    body {
+        /* justify-content: flex-start; */
+        width: 100%;
+    }
+
+    .container {
+        background-image: url('white-architecture.jpeg');
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .text-section {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 577;
+    }
+
+    p {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}
